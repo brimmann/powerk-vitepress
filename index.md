@@ -4,22 +4,19 @@ layout: home
 
 hero:
   name: "Powerk"
-  text: "This is my blog where I will be posting tutorials."
-  tagline: My great project tagline
+  text: "Explore plenty of software development tutorials."
+  tagline: Developers' cookbook
   actions:
     - theme: brand
-      text: Markdown Examples
+      text: Start learning now
       link: /markdown-examples
-    - theme: alt
-      text: API Examples
-      link: /api-examples
 
 features:
-  - title: Feature A
+  - title: Building a calclator using python
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
+  - title: Create your own npm package
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
+  - title: "Python: series Data types in python"
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
 ---
 
