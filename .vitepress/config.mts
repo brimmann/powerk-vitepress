@@ -8,7 +8,7 @@ export default defineConfig({
   themeConfig: {
     logo: "/logo.svg",
     // https://vitepress.dev/reference/default-theme-config
-    nav: [{ text: "Explore", link: "/explore" }],
+    nav: [{ text: "Explore", link: "/explore" }, { text: "About the author", link: "/about"}],
 
     sidebar: {
       "/explore/": [

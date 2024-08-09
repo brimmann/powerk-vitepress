@@ -8,8 +8,8 @@ hero:
   tagline: Developers' cookbook
   actions:
     - theme: brand
-      text: Start learning now
-      link: /markdown-examples
+      text: Start exploring now
+      link: /explore
 
 features:
   - title: Building a calclator using python
