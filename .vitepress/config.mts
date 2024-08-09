@@ -38,7 +38,7 @@ export default defineConfig({
         {
           text: "Python Crash Course",
           items: [
-            { text: "Index", link: "/guide/" },
+            { text: "Getting Started", link: "/python-crash-course/" },
             { text: "One", link: "/guide/one" },
             { text: "Two", link: "/guide/two" },
           ],
