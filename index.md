@@ -14,9 +14,12 @@ hero:
 features:
   - title: Building a calclator using python
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+    link: /
   - title: Create your own npm package
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+    link: /
   - title: "Python: series Data types in python"
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+    link: /
 ---
 
