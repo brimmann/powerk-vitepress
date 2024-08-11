@@ -4,22 +4,33 @@ layout: home
 
 hero:
   name: "Powerk"
-  text: "Explore plenty of software development tutorials."
+  text: "Learning made simple"
   tagline: Developers' cookbook
-  actions:
-    - theme: brand
-      text: Start exploring now
-      link: /explore
 
 features:
-  - title: Building a calclator using python
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-    link: /
-  - title: Create your own npm package
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-    link: /
-  - title: "Python: series Data types in python"
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-    link: /
----
+  - title: Python Crash Course
+    details: Learn the basics of Python in no time and start buidling your own programs.
+    link: /python-crash-course/
+  - title: JavaScript Crash Course
+    details: Learn the basics of JavaScript in no time and start buidling your own websites and other apps.
+    link: /javascript-crash-course/
+  - title: C++ Crash Course
+    details: Learn the basics of a highly performant and efficient programming language, and build the programs of your choice.
+    link: /cpp-crash-course/
+  - title: Django Crash Course
+    details: Master the fundamentals of Django and learn to build dynamic, fully customizable websites from scratch.
+    link: /django-crash-course/
+  - title: Vue Crash Course
+    details: Learn to create interactive and dynamic websites easily with Vue.js, even if you’re just starting out!
+    link: /vue-crash-course/
+  - title: "Python Projects: Building cool stuff"
+    details: Get hands-on with Python and create amazing projects from scratch
+    link: /python-stuff/
+  - title: "JavaScript Projects: Building cool stuff"
+    details: Start your journey with JavaScript and learn to create interactive and dynamic web pages from scratch!
+    link: /javascript-stuff/
+  - title: "C++ Projects: Building cool stuff"
+    details: Discover the power of C++ and start building high-performance applications from the ground up!
+    link: /cpp-stuff/
 
+---
