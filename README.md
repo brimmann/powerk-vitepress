@@ -15,7 +15,7 @@ Powerk is a comprehensive resource for software developers, offering a wide rang
 
 ## Getting Started
 
-To get started with Powerk click on [this link](powerk.codeglyn.com)
+To get started with Powerk click on [this link](https://powerk.codeglyn.com/)
 
 ## License
 
