@@ -5,6 +5,7 @@ export default defineConfig({
   title: "Powerk",
   description: "This is my blog where I will be posting tutorials.",
   head: [["link", { rel: "icon", href: "/logo.svg" }]],
+  base: '/powerk-vitepress/',
   themeConfig: {
     logo: "/logo.svg",
     // https://vitepress.dev/reference/default-theme-config
