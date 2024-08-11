@@ -8,14 +8,14 @@ Powerk is a comprehensive resource for software developers, offering a wide rang
 
 ## Features
 
-- In-depth tutorials on popular programming languages and frameworks
+- Simple and easy tutorials from beginners to advanced
 - Step-by-step guides for building projects
 - Tips and tricks for efficient coding
 - Regular updates with new content
 
 ## Getting Started
 
-To get started with Powerk, simply navigate through the tutorials and start learning. Each tutorial is designed to be easy to follow and understand.
+To get started with Powerk click on [this link](powerk.codeglyn.com)
 
 ## License
 
