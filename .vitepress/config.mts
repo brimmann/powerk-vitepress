@@ -10,7 +10,7 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
 
     socialLinks: [
-      { icon: "github", link: "https://github.com/vuejs/vitepress" },
+      { icon: "github", link: "https://github.com/brimmann/powerk-vitepress" },
     ],
     footer: {
       message: 'Released under the Attribution-NonCommercial-NoDerivatives 4.0 International License.',
