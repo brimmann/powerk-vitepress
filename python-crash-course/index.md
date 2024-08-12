@@ -112,6 +112,10 @@ Make sure to do this exercise.
 
 Write and run a program that displays *Hello there, I'm a Python program* to the user on the screen.
 
+To display a text to the user on the screen we use **print('your text')**.
+
+**print()** is called a **function**.
+
 ## What is coming next?
 From this point forward, we have our computer ready with VS Code and Python installed. So we will be writing all programs the same way using VS Code. We will create different programs that do more than just displaying text on the screen to the user.
 
