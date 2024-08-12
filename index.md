@@ -1,4 +1,8 @@
 ---
+head:
+  - - meta
+    - name: google-site-verification 
+      content: _vP4az6QL3Jz2jy9SnRZVIsPZVIXfC9T-77LKxhaHHY
 # https://vitepress.dev/reference/default-theme-home-page
 layout: home
 
