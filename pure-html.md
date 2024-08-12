@@ -1,0 +1,1 @@
+[Link to pure.html](/googleac715ede50b7e735.html){target="_self"}
