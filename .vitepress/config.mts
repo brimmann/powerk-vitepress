@@ -2,6 +2,9 @@ import { defineConfig } from "vitepress";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  sitemap: {
+    hostname: 'https://powerk.codeglyn.com' 
+  },
   title: "Powerk",
   description: "Learning made simple.",
   head: [["link", { rel: "icon", href: "/logo.svg" }]],
@@ -50,7 +53,7 @@ export default defineConfig({
           items: [
             { text: "Getting Started", link: "/python-crash-course/" },
             {
-              text: "Dealing with informations",
+              text: "Dealing with information",
               link: "/python-crash-course/variables",
             },
             {
@@ -62,7 +65,7 @@ export default defineConfig({
               link: "/python-crash-course/loops/",
             },
             {
-              text: "Divding your code into blocks",
+              text: "Dividing your code into blocks",
               link: "/python-crash-course/functions/",
             },
             {

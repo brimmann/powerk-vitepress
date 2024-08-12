@@ -9,10 +9,10 @@ hero:
 
 features:
   - title: Python Crash Course
-    details: Learn the basics of Python in no time and start buidling your own programs.
+    details: Learn the basics of Python in no time and start building your own programs.
     link: /python-crash-course/
   - title: JavaScript Crash Course
-    details: Learn the basics of JavaScript in no time and start buidling your own websites and other apps.
+    details: Learn the basics of JavaScript in no time and start building your own websites and other apps.
     link: /javascript-crash-course/
   - title: C++ Crash Course
     details: Learn the basics of a highly performant and efficient programming language, and build the programs of your choice.
