@@ -300,3 +300,125 @@ You might be asking what is the use of containers that only hold one of two pred
 
 **Note:** Keep in mind that we cannot perform mathematical operations on boolean values.
 
+## Collection of Information
+The types of data we discussed form the foundation of information handling within our application. There are other types of data that are built on top of these basic data types, but they are more like collections of information stored in one container.
+
+Create a new file named **collections.py** and write this code:
+```python
+# Collection of data in one container. In Python called List
+student_marks = [67, 81, 83]
+print(student_marks)
+
+# Collection of more complicated data in one container. In Python called Dictionary.
+student_marks_names = {"John": 67, "Khan": 81, "Michel": 83}
+print(student_marks_names)
+```
+Run the code using the command ```python collections.py```.
+
+Output:
+```terminal
+[67, 81, 83]
+{'John': 67, 'Khan': 81, 'Michel': 83}
+```
+
+**Explanation**
+Our program creates two variables but they are not as simple as our string or number variables that hold only one value. These variables hold multiple values inside them, like grouped pieces of information. The variable **student_marks** is called a **list** in Python which, hold multiple values and each value is a basic type like number, string or boolean. The variable **student_marks_names** also hold multiple values but each value is a pair separated with comma. This data type is called **dictionary** in Python. Each pair consist of a **key** and **value**. In our case the first pair is the name of the student, John and his marks which are 67. Notice the difference: the list holds only marks of the students, separated by comma while the dictionary holds the names and the marks of the students, also separated comma.
+
+We have many types of collections with varying complexities, but the most common data types that hold collections of data are these two:
+1. Lists
+2. Dictionaries
+
+### Lists
+Let's explore a couple of examples of list and explore what kind of things can we do with lists.
+
+Create file named **lists.py** and write this code (you don't have write the comments starting with # unless if you want):
+```python
+# First example, using data in the list
+student_marks = [67, 81, 83, 62]
+print(student_marks) # print the whole list
+print(student_marks[0]) # print item number 1, lists start with zero
+var2 = student_marks[2] # taking third element and assigning it to  a variable var2
+print(var2) # var2 is now 83
+
+# Second example, changing data in the list
+print(student_marks[3]) # student_marks[3] is 62
+student_marks[3] = 65 # change last item from 62 to 65
+print(student_marks[3]) # student_marks[3] has changed to 65 now
+
+# Third example, Adding and removing items to the list and from the list
+student_marks.append(77) # adding 77 to the end of the list
+print(student_marks) # list is now [67, 81, 83, 62, 77]
+
+student_marks.remove(81) # remove 81 from the list
+print(student_marks) # list is now [67, 83, 62, 77], 81 has been removed
+```
+Run the program by typing ```python lists.py``` in the Terminal.
+
+Output:
+```terminal
+[67, 81, 83, 62]
+67
+83
+62
+65
+[67, 81, 83, 65, 77]
+[67, 83, 65, 77]
+```
+
+**Explanation:**
+
+The first example: it shows how we can use list. We can access each item in the list separately. By using ```list_name[index]``` where index is a number indicating which item in the list to access. We can assign this item to other variable, do math with them or print them on the screen.
+
+The second example: it shows how we can change the items in the list. We can access items by their indices and assign them new values. Just like we changed the last item to 65.
+
+The third example: shows that how we can remove an item from a list or add a new item to the list.
+
+**Note:** In Python, list indexing start from 0. So, the first item is at index 0, the second item is at index 1, the third element is at index 2 and so on.
+
+### Dictionary
+Dictionaries are totally the same a list that stores collection of information but the inside a dictionary is accessed by a name instead of index numbers.
+
+Create a new file named **dictionaries.py** and write this code (you don't have write the comments starting with # unless if you want):
+```python
+# First example, using the data inside a dictionary
+student_marks_names = {"John": 67, "Khan": 81, "Michel": 83, "Ali": 62}
+print(student_marks_names) # Print the whole dictionary
+print(student_marks_names["John"]) # print John's score, which is 67
+var2 = student_marks_names["Michel"] # Assign Michel's score to var2
+print(var2) # var2 is now 83
+
+# Second example, changing data in the dictionary
+print(student_marks_names["Ali"]) # Ali's score is 62
+student_marks_names["Ali"] = 65 # Changing Ali's score from 62 to 65
+print(student_marks_names["Ali"]) # Ali's score is 65 now
+
+# Third example, adding or removing a pair of data from, dictionaries
+student_marks_names["Peter"] = 77 # adding a new student's score to the end of dictionary
+print(student_marks_names) # now: {"John": 67, "Khan": 81, "Michel": 83, "Ali": 62, "Peter": 77}
+
+del student_marks_names["Khan"] # deleting Khan and his score from the dictionary
+print(student_marks_names) # now: {"John": 67, "Michel": 83, "Ali": 62, "Peter": 77}
+```
+Run the program by typing ```python dictionaries.py``` in the Terminal.
+
+Output:
+```terminal
+{'John': 67, 'Khan': 81, 'Michel': 83, 'Ali': 62}
+67
+83
+62
+65
+{'John': 67, 'Khan': 81, 'Michel': 83, 'Ali': 65, 'Peter': 77}
+{'John': 67, 'Michel': 83, 'Ali': 65, 'Peter': 77}
+```
+
+**Explanation:**
+
+We access the value of an item in a dictionary by its name, unlike lists where we access the value of an item by its index number. When a adding a new data pair to our dictionary we use ```dictionary_name["new_data_name"] = new_data_value``` syntax. To delete an item from a dictionary, we use ```del dictionary_name["data_name_to_be_deleted"]```. The keyword **del**, tells our program to delete a specific item from our dictionary unlike list where we use ```list_name.remove(item_index)```.
+
+**Note**: Remember that the pair inside a dictionary is called a **key value pair** where key is the name of the data and value is value of the data and each pair is separated by comma. A complete syntax of how to create  dictionary in Python is as follow:
+
+``` variable_name = {key:value}```
+
+## What we've learned so far?
+In the previous chapter, we learned how to setup the environment and write our first program. In this chapter, we first talked about what variables are and why we need them. Then, we learned about the basic types of variables, which are numbers, strings and booleans and did some fun things with them. After that, we explored more complex variables types like dictionaries and lists. We learned how to use these data types and how to modify them. Now we are ready to dive even deeper and do some more interesting things with our programs. In the next chapter, we will learn to do things conditionally where we will look at some conditions and, based on those condition, we will tell our program what to do such as whether to print something or not.
