@@ -20,33 +20,33 @@ export default defineConfig({
       copyright: 'Copyright © 2024 Mohammad Rashid Stanikzai'
     },
     sidebar: {
-      "/explore/": [
-        {
-          text: "Explore",
-          items: [
-            { text: "Python Crash Course", link: "/python-crash-course" },
-            {
-              text: "JavaScript Crash Course",
-              link: "/javascript-crash-course/",
-            },
-            { text: "C++ Crash Course", link: "/cpp-crash-course" },
-            { text: "Vue Crash Course", link: "/vue-crash-course/" },
-            {
-              text: "Django crash course",
-              link: "django-crash-course",
-            },
-            {
-              text: "Python Projects: Building cool stuff",
-              link: "python-stuff",
-            },
-            {
-              text: "Javascript Projects: Building cool stuff",
-              link: "javascript-stuff",
-            },
-            { text: "C++ Projects: Building cool stuff", link: "cpp-stuff" },
-          ],
-        },
-      ],
+      // "/explore/": [
+      //   {
+      //     text: "Explore",
+      //     items: [
+      //       { text: "Python Crash Course", link: "/python-crash-course" },
+      //       {
+      //         text: "JavaScript Crash Course",
+      //         link: "/javascript-crash-course/",
+      //       },
+      //       { text: "C++ Crash Course", link: "/cpp-crash-course" },
+      //       { text: "Vue Crash Course", link: "/vue-crash-course/" },
+      //       {
+      //         text: "Django crash course",
+      //         link: "django-crash-course",
+      //       },
+      //       {
+      //         text: "Python Projects: Building cool stuff",
+      //         link: "python-stuff",
+      //       },
+      //       {
+      //         text: "Javascript Projects: Building cool stuff",
+      //         link: "javascript-stuff",
+      //       },
+      //       { text: "C++ Projects: Building cool stuff", link: "cpp-stuff" },
+      //     ],
+      //   },
+      // ],
       "/python-crash-course/": [
         {
           text: "Python Crash Course",
@@ -58,19 +58,19 @@ export default defineConfig({
             },
             {
               text: "Doing things conditionally",
-              link: "/python-crash-course/conditions/",
+              link: "/python-crash-course/conditions",
             },
             {
               text: "Doing things repeatedly",
-              link: "/python-crash-course/loops/",
+              link: "/python-crash-course/loops",
             },
             {
               text: "Dividing your code into blocks",
-              link: "/python-crash-course/functions/",
+              link: "/python-crash-course/functions",
             },
             {
               text: "Objects in programs",
-              link: "/python-crash-course/classes/",
+              link: "/python-crash-course/classes",
             },
           ],
         },
