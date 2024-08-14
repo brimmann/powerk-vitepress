@@ -420,5 +420,25 @@ We access the value of an item in a dictionary by its name, unlike lists where w
 
 ``` variable_name = {key:value}```
 
+## Let the user enter some data into the program
+Can we allow the user who runs our program to store some data in variables inside our program? Of course! This is called **input** in programming, and most of the programs we use daily deal with input. In our examples, we printed some data to the screen so the user can see it which is called **output** in programming. Let's write a program where the user enters his name, and then the program will print it for them on the screen.
+
+Create a file named **input.py** and write this code:
+```python
+user_name = input("Enter your name: ") # assign the entered value to user_name
+
+capt_user_name = user_name.upper() # we treat user_name just like other variables
+
+print("Your name is: ")
+print(user_name) # user_name, now contains the value user entered
+```
+
+**Explanation:** In this program we ask the user to enter their name. Then program converts it to uppercase letter and displays it on the screen just like we displayed other things in previous examples.
+
+To let user the enter some data in the program, we use **input()** function. Inside the parenthesis, we can enter the message that we want to show to the user first before they enter something. This message is optional, you can leave empty if you prefer.
+
+So the whole idea of programs is to get something from the user, process it, and then provide an output. This is exactly what our programs does: it takes the user's as input, processes it by converting it to uppercase letters, and then displays it on the screen. The name is **input**, converting it to uppercase is *processing*, and printing it on the screen is **output**.
+
+
 ## What we've learned so far?
 In the previous chapter, we learned how to setup the environment and write our first program. In this chapter, we first talked about what variables are and why we need them. Then, we learned about the basic types of variables, which are numbers, strings and booleans and did some fun things with them. After that, we explored more complex variables types like dictionaries and lists. We learned how to use these data types and how to modify them. Now we are ready to dive even deeper and do some more interesting things with our programs. In the next chapter, we will learn to do things conditionally where we will look at some conditions and, based on those condition, we will tell our program what to do such as whether to print something or not.
