@@ -120,5 +120,10 @@ if marks >= 10 # greater or equal, still true since it is at least equal
 Observe the examples above that how we can compare variable **marks**.
 
 
-## Summarize
+## Summary
 First, we learned that conditions are a part of our lives, and we make decisions based on certain conditions. Then we applied the concept of conditions in programs, where we run a piece of code based on specific conditions. Then we wrote a program that asked the user to enter the weekday, and based on the input, it displayed a proper message for what meals will they have today. In this program, we learned about **block of code** and how to use the basic concepts we have already learned to build something more complex. We also learned how to create conditions by comparing our variables to each other or some values. The way we use equal, smaller then or greater then to construct to do the comparison.
+
+## ٍExercise
+Write the same example program, but ensure that the user can enter a full day name like "Saturday" or a three-letter abbreviation like "Sat". Also allow the user to enter the names in either uppercase or lowercase, without any constraints on the case of the letters.
+
+*Hint*: You can use `and` and `or` to join multiple conditions. And for case-insensitive behavior, use `.upper()` or `.lower()` methods and then compare the value in the condition.
