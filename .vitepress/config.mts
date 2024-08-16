@@ -53,23 +53,23 @@ export default defineConfig({
           items: [
             { text: "Getting Started", link: "/python-crash-course/" },
             {
-              text: "Dealing with information",
+              text: "Dealing with Information",
               link: "/python-crash-course/variables",
             },
             {
-              text: "Doing things conditionally",
+              text: "Doing Things Conditionally",
               link: "/python-crash-course/conditions",
             },
             {
-              text: "Doing things repeatedly",
+              text: "Doing Things Repeatedly",
               link: "/python-crash-course/loops",
             },
             {
-              text: "Dividing your code into blocks",
+              text: "Dividing Your Code into Clocks",
               link: "/python-crash-course/functions",
             },
             {
-              text: "Objects in programs",
+              text: "Objects in Programs",
               link: "/python-crash-course/classes",
             },
           ],
