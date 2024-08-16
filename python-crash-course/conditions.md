@@ -1,3 +1,7 @@
+# Chapter Three
+::: info Note
+If you are totally new to programming, please make sure you have completed [Chapter One](/python-crash-course/) and [Chapter two](/python-crash-course/variables).
+:::
 # Doing Things Conditionally
 
 By doing things conditionally I mean that we do things based on some conditions. For example, if its raining, I will not play; if it is not raining I will play. Whether it is raining or not is a condition here. Similarly, in programming we can also do or don't, do things conditionally. Before we move, let's write a program that do things conditionally.

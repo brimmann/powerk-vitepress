@@ -1,3 +1,7 @@
+# Chapter Four
+::: info Note
+If you are totally new to programming, please make sure you have completed [Chapter One](/python-crash-course/), [Chapter two](/python-crash-course/variables) and [Chapter two](/python-crash-course/conditions).
+:::
 # Doing things repeatedly
 
 In this chapter, we will will explore another basic concept of programming: running the same line of code or the same block of code multiple times, repeatedly. For example, if we want to write a program that prints the text _Hello world_ five times on the screen, we might initially do something like this:

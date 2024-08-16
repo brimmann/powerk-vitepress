@@ -1,6 +1,10 @@
 ---
 outline: deep
 ---
+# Chapter One
+::: info Note
+This is the first chapter of Python Crash Course so you can start from here without any prior knowledge about programming.
+:::
 # What is it all about?
 Before we start, let's ask ourselves a few questions. Why do we learn programming? What do I want to build? How did the word *programming* even come to my mind? Please take a moment to answer these questions in your mind before moving to the next section. 
 

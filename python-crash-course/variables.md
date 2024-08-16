@@ -1,6 +1,10 @@
 ---
 outline: deep
 ---
+# Chapter Two
+::: info Note
+If you are totally new to programming, please make sure you've completed [Chapter One](/python-crash-course/).
+:::
 
 # Dealing with information?
 
