@@ -1,6 +1,6 @@
 # Chapter Three
 ::: info Note
-If you are totally new to programming, please make sure you have completed [Chapter One](/python-crash-course/) and [Chapter two](/python-crash-course/variables).
+If you are totally new to programming, please make sure you have completed [Chapter One](/python-crash-course/) and [Chapter Two](/python-crash-course/variables).
 :::
 # Doing Things Conditionally
 

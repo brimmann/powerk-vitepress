@@ -1,6 +1,6 @@
 # Chapter Four
 ::: info Note
-If you are totally new to programming, please make sure you have completed [Chapter One](/python-crash-course/), [Chapter two](/python-crash-course/variables) and [Chapter two](/python-crash-course/conditions).
+If you are totally new to programming, please make sure you have completed [Chapter One](/python-crash-course/), [Chapter Two](/python-crash-course/variables) and [Chapter Three](/python-crash-course/conditions).
 :::
 # Doing things repeatedly
 
