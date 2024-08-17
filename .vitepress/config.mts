@@ -68,7 +68,7 @@ export default defineConfig({
               link: "/python-crash-course/loops",
             },
             {
-              text: "Dividing Your Code into Clocks",
+              text: "Dividing Your Code into Blocks",
               link: "/python-crash-course/functions",
             },
             {

@@ -4,7 +4,7 @@
 If you are totally new to programming, please make sure you have completed [Chapter One](/python-crash-course/), [Chapter two](/python-crash-course/variables), [Chapter Three](/python-crash-course/conditions) and [Chapter Four](/python-crash-course/loops.md).
 :::
 
-# Dividing Your Code into Blocks
+## Dividing Your Code into Blocks
 
 Up to now, we have learned all the basics principles of programming that will help us start building our own programs. However, as you start building your own programs, your codebase will grow larger as you keep adding new functionalities. This makes your code hard to manage and modify. To address this problem, we need to properly organize our code. We can do this by dividing our code into different independent parts. Avoid repeating yourself by writing the same code and the same solution again and again. Instead create reusable pieces of your code that can be used whenever needed. Let's write a program to demonstrate this concept.
 
