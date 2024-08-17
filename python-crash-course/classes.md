@@ -4,7 +4,7 @@
 If you are totally new to programming, please make sure you have completed [Chapter One](/python-crash-course/), [Chapter two](/python-crash-course/variables), [Chapter Three](/python-crash-course/conditions), [Chapter Four](/python-crash-course/loops.md) and [Chapter Five](/python-crash-course/functions.md).
 :::
 
-# Objects in Programming
+## Objects in Programming
 
 We can treat different aspects of our program like real world objects. This approach helps us to create better and maintainable solutions. However, keep in mind that you don't have use it; you can build any program using the concepts we've already learned. Let's first write program to introduce the concept.
 

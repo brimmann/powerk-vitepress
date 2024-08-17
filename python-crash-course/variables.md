@@ -6,7 +6,7 @@ outline: deep
 If you are totally new to programming, please make sure you've completed [Chapter One](/python-crash-course/).
 :::
 
-# Dealing with information?
+## Dealing with information?
 
 You might be asking this question "What do you mean by dealing with information and why do we bother talking about it"? Well, if we take a closer look at the world of software, everything is about information. Programs are nothing but dealers with information. We use them to manage information. With Notepad we store information; with websites we share information with the world; even playing videos games deal with information-which character are we playing? How much health of the player is remaining? Where is our character now? Did the enemy get damaged? Everything is about information. That is why there is a special term for the world of computer: Information Technology or in short, IT.
 
