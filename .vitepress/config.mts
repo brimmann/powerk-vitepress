@@ -3,11 +3,30 @@ import { defineConfig } from "vitepress";
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   sitemap: {
-    hostname: 'https://powerk.codeglyn.com' 
+    hostname: "https://powerk.codeglyn.com",
   },
   title: "Powerk",
   description: "Learning made simple.",
-  head: [["link", { rel: "icon", href: "/logo.svg" }]],
+  head: [
+    ["link", { rel: "icon", href: "/logo.svg" }],
+    [
+      "script",
+      {
+        async: true,
+        src: "https://www.googletagmanager.com/gtag/js?id=G-ZNPYDPL8JW",
+      },
+    ],
+    [
+      "script",
+      {},
+      `
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-ZNPYDPL8JW');
+    `,
+    ],
+  ],
   themeConfig: {
     logo: "/logo.svg",
     // https://vitepress.dev/reference/default-theme-config
@@ -15,12 +34,11 @@ export default defineConfig({
     socialLinks: [
       { icon: "github", link: "https://github.com/brimmann/powerk-vitepress" },
     ],
-    nav: [
-      {text: "About the Author", link: "https://me.codeglyn.com"}
-    ],
+    nav: [{ text: "About the Author", link: "https://me.codeglyn.com" }],
     footer: {
-      message: 'Released under the Attribution-NonCommercial-NoDerivatives 4.0 International License.',
-      copyright: 'Copyright © 2024 Mohammad Rashid Stanikzai'
+      message:
+        "Released under the Attribution-NonCommercial-NoDerivatives 4.0 International License.",
+      copyright: "Copyright © 2024 Mohammad Rashid Stanikzai",
     },
     sidebar: {
       // "/explore/": [
