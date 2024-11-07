@@ -1,4 +1,8 @@
 
+---
+outline: [2, 3]
+---
+
 ## Procedural Task
 The following tasks are provided with proper instruction, the task is marked correct as long as you follow the instructions. Do not copy code, instead write it so you can understand the whole concept. This is essential for your exploratory tasks, quizzes, assignments and exams.
 
