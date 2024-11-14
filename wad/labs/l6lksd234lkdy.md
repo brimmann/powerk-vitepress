@@ -62,7 +62,6 @@ JavaScript has several data types that can be categorized into **Primitive** and
 
 1. **Object**: Collections of key-value pairs.
 2. **Array**: List-like objects.
-3. **Function**: Callable objects.
 
 ##### 2.3 Examples
 
@@ -84,11 +83,6 @@ let person = {
 
 let fruits = ["Apple", "Banana", "Cherry"]; // Array
 
-function greet() {
-    console.log("Hi!");
-} // Function
-```
-
 ##### 2.4 Type Checking
 
 Use `typeof` to determine the type of a variable.
@@ -103,7 +97,6 @@ console.log(typeof uniqueId); // "symbol"
 console.log(typeof bigNumber); // "bigint"
 console.log(typeof person);  // "object"
 console.log(typeof fruits);  // "object"
-console.log(typeof greet);   // "function"
 ```
 
 ---
@@ -590,9 +583,7 @@ The webpage displays a heading "Hello, World!".
   document.write("<p>This is safe.</p>");
   
   // Risky: Overwrites the entire document if used after load
-  window.onload = function() {
-      document.write("<p>This will erase the page content.</p>");
-  };
+  document.write("<p>This will erase the page content.</p>");
   ```
 
 - **Modern Alternatives:** For dynamic content manipulation, consider using the Document Object Model (DOM) methods like `createElement()`, `appendChild()`, `innerHTML`, etc., which offer more control and are safer to use after the page has loaded.
@@ -644,28 +635,16 @@ document.getElementById('elementId');
 </head>
 <body>
     <h1 id="title">Hello, World!</h1>
-    <button onclick="changeTitle()">Change Title</button>
 
     <script>
-        function changeTitle() {
-            let titleElement = document.getElementById('title');
-            titleElement.style.color = 'blue';
-            titleElement.innerHTML = 'Title Changed!';
-        }
+        let titleElement = document.getElementById('title');
+        titleElement.style.color = 'blue';
+        titleElement.innerHTML = 'Title Changed!';
     </script>
 </body>
 </html>
 ```
 
-**Explanation:**
-
-- The HTML contains an `<h1>` element with the `id` of `title`.
-- When the button is clicked, the `changeTitle` function is invoked.
-- The function selects the `<h1>` element using `getElementById`, changes its text color to blue, and updates its content.
-
-**Output:**
-
-When the button is clicked, the heading changes to blue and displays "Title Changed!".
 
 ---
 
@@ -695,29 +674,17 @@ document.getElementsByClassName('className');
     <p class="paragraph">Paragraph 1</p>
     <p class="paragraph">Paragraph 2</p>
     <p class="paragraph">Paragraph 3</p>
-    <button onclick="highlightParagraphs()">Highlight Paragraphs</button>
 
     <script>
-        function highlightParagraphs() {
-            let paragraphs = document.getElementsByClassName('paragraph');
-            for (let i = 0; i < paragraphs.length; i++) {
-                paragraphs[i].style.backgroundColor = 'yellow';
-            }
+        let paragraphs = document.getElementsByClassName('paragraph');
+        for (let i = 0; i < paragraphs.length; i++) {
+            paragraphs[i].style.backgroundColor = 'yellow';
         }
     </script>
 </body>
 </html>
 ```
 
-**Explanation:**
-
-- The HTML contains three `<p>` elements, each with the class `paragraph`.
-- When the button is clicked, the `highlightParagraphs` function is called.
-- The function selects all elements with the class `paragraph` and loops through them, changing their background color to yellow.
-
-**Output:**
-
-Clicking the button highlights all paragraphs with a yellow background.
 
 ---
 
@@ -748,33 +715,14 @@ element.innerHTML = 'New Content';
     <div id="content">
         <p>This is the original content.</p>
     </div>
-    <button onclick="updateContent()">Update Content</button>
 
     <script>
-        function updateContent() {
-            let contentDiv = document.getElementById('content');
-            contentDiv.innerHTML = '<h2>Content Updated!</h2><p>The paragraph has been replaced.</p>';
-        }
+        let contentDiv = document.getElementById('content');
+        contentDiv.innerHTML = '<h2>Content Updated!</h2><p>The paragraph has been replaced.</p>';
     </script>
 </body>
 </html>
 ```
-
-**Explanation:**
-
-- The HTML includes a `<div>` with the `id` of `content`, containing a `<p>` element.
-- Clicking the button triggers the `updateContent` function.
-- The function selects the `<div>` using `getElementById` and updates its `innerHTML` with new HTML content.
-
-**Output:**
-
-After clicking the button, the original paragraph is replaced with a new heading and paragraph:
-```
-Content Updated!
-The paragraph has been replaced.
-```
-
-
 
 ## Exploratory Tasks
 Read the requirments and solve them accordingly using your own understanding.
@@ -826,37 +774,10 @@ Here's a basic structure to help you get started. **Do not include it the soluti
 <body>
     <h1 id="greeting">Welcome!</h1>
     <p class="info">This is your personalized greeting page.</p>
-    <button onclick="startGreeting()">Start</button>
-
+	
     <script>
-        function startGreeting() {
-            // Step a: Greet the User
-            // Step b: Favorite Activity Selection
-            // Step c: Confirmation to Update Information
-        }
-
-        // Bonus Challenge: Loop Through Messages
-        function logGreetings() {
-            // Your loop code here
-        }
+	    
     </script>
 </body>
 </html>
-```
-
-**JavaScript:**
-
-```javascript
-function startGreeting() {
-    // Step a: Greet the User
-
-    // Step b: Favorite Activity Selection
-
-    // Step c: Confirmation to Update Information
-}
-
-// Bonus Challenge: Loop Through Messages
-function logGreetings() {
-    // Your loop code here
-}
 ```
