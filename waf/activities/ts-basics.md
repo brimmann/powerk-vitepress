@@ -1,314 +1,513 @@
-# **15-Minute TypeScript Activity: Building a Simple To-Do List App**
+# **15-Minute TypeScript Tutorial: Building a Simple Shapes Calculator Together**
 
-**Objective:**
+Welcome! In this short tutorial, we'll build a simple TypeScript program that calculates the area and perimeter of different shapes. Along the way, we'll explore various TypeScript features such as type annotations, interfaces, classes, enums, and modules.
 
-In this quick tutorial, we'll build a simple command-line To-Do List application using TypeScript. We'll cover key TypeScript features such as type annotations, interfaces, classes, enums, and basic asynchronous operations. Let's code together!
-
----
-
-## **Table of Contents**
-
-1. [Prerequisites](#prerequisites)
-2. [Project Setup](#project-setup)
-3. [Step 1: Initialize the Project](#step-1-initialize-the-project)
-4. [Step 2: Define a Task Interface](#step-2-define-a-task-interface)
-5. [Step 3: Create an Enum for Task Status](#step-3-create-an-enum-for-task-status)
-6. [Step 4: Implement the ToDoList Class](#step-4-implement-the-todolist-class)
-7. [Step 5: Add Basic Operations](#step-5-add-basic-operations)
-8. [Step 6: Test the Application](#step-6-test-the-application)
-9. [Conclusion](#conclusion)
+**Let's get started!**
 
 ---
 
-## **Prerequisites**
+## **Step 1: Project Setup**
 
-- Node.js and npm installed on your machine.
-- Basic knowledge of JavaScript and some familiarity with TypeScript.
+### **1.1 Create a New Project Directory**
 
----
+Open your terminal and create a new directory for the project:
 
-## **Project Setup**
+```bash
+mkdir shapes-calculator
+cd shapes-calculator
+```
 
-Let's get started by setting up our project environment.
+### **1.2 Initialize a New NPM Project**
 
-### **Step 1: Initialize the Project**
+Initialize a new Node.js project with default settings:
 
-1. **Create a new directory and navigate into it:**
+```bash
+npm init -y
+```
 
-   ```bash
-   mkdir todo-app
-   cd todo-app
-   ```
+### **1.3 Install TypeScript**
 
-2. **Initialize a new npm project:**
+Install TypeScript as a development dependency:
 
-   ```bash
-   npm init -y
-   ```
+```bash
+npm install typescript --save-dev
+```
 
-3. **Install TypeScript and ts-node (for running TypeScript files directly):**
+### **1.4 Initialize TypeScript Configuration**
 
-   ```bash
-   npm install typescript ts-node @types/node --save-dev
-   ```
+Initialize a `tsconfig.json` file with default settings:
 
-4. **Initialize a TypeScript configuration file:**
+```bash
+npx tsc --init
+```
 
-   ```bash
-   npx tsc --init
-   ```
-
-   This creates a `tsconfig.json` file with default settings.
-
-5. **Open the project in your code editor (e.g., VS Code):**
-
-   ```bash
-   code .
-   ```
+This file allows you to customize TypeScript compiler options.
 
 ---
 
-### **Step 2: Define a Task Interface**
+## **Step 2: Create the Enum and Interfaces**
 
-Create a `Task` interface to define the structure of a to-do item.
+### **2.1 Define an Enum for Shape Types**
 
-1. **Create a new file `Task.ts` in a `models` folder:**
+Create a new file `ShapeType.ts` in the `src` directory:
 
-   - Create a folder:
+```bash
+mkdir src
+cd src
+touch ShapeType.ts
+```
 
-     ```bash
-     mkdir models
-     ```
+In `ShapeType.ts`, define the `ShapeType` enum:
 
-   - Create the file:
+```typescript
+// src/ShapeType.ts
+export enum ShapeType {
+  Circle = 'CIRCLE',
+  Rectangle = 'RECTANGLE'
+}
+```
 
-     ```bash
-     touch models/Task.ts
-     ```
+### **2.2 Define Interfaces for Shapes**
 
-2. **Define the `Task` interface:**
+Create a new file `IShape.ts`:
 
-   ```typescript
-   // models/Task.ts
+```bash
+touch IShape.ts
+```
 
-   import { TaskStatus } from './TaskStatus';
+In `IShape.ts`, define the `IShape` interface:
 
-   export interface Task {
-     id: number;
-     title: string;
-     description?: string;
-     status: TaskStatus;
-   }
-   ```
-
----
-
-### **Step 3: Create an Enum for Task Status**
-
-Enums in TypeScript allow us to define a set of named constants.
-
-1. **Create a new file `TaskStatus.ts` in the `models` folder:**
-
-   ```bash
-   touch models/TaskStatus.ts
-   ```
-
-2. **Define the `TaskStatus` enum:**
-
-   ```typescript
-   // models/TaskStatus.ts
-
-   export enum TaskStatus {
-     Pending = 'Pending',
-     InProgress = 'InProgress',
-     Completed = 'Completed',
-   }
-   ```
+```typescript
+// src/IShape.ts
+export interface IShape {
+  type: string;
+  getArea(): number;
+  getPerimeter(): number;
+}
+```
 
 ---
 
-### **Step 4: Implement the ToDoList Class**
+## **Step 3: Implement Classes for Shapes**
 
-We'll create a class to manage our tasks.
+### **3.1 Create the Circle Class**
 
-1. **Create a new file `ToDoList.ts` in a `classes` folder:**
+Create a new file `Circle.ts`:
 
-   - Create the folder:
+```bash
+touch Circle.ts
+```
 
-     ```bash
-     mkdir classes
-     ```
+In `Circle.ts`, implement the `Circle` class:
 
-   - Create the file:
+```typescript
+// src/Circle.ts
+import { IShape } from './IShape';
+import { ShapeType } from './ShapeType';
 
-     ```bash
-     touch classes/ToDoList.ts
-     ```
+export class Circle implements IShape {
+  type: string = ShapeType.Circle;
+  constructor(public radius: number) {}
 
-2. **Implement the `ToDoList` class:**
+  getArea(): number {
+    return Math.PI * this.radius ** 2;
+  }
 
-   ```typescript
-   // classes/ToDoList.ts
+  getPerimeter(): number {
+    return 2 * Math.PI * this.radius;
+  }
+}
+```
 
-   import { Task } from '../models/Task';
-   import { TaskStatus } from '../models/TaskStatus';
+### **3.2 Create the Rectangle Class**
 
-   export class ToDoList {
-     private tasks: Task[] = [];
-     private nextId: number = 1;
+Create a new file `Rectangle.ts`:
 
-     public addTask(title: string, description?: string): Task {
-       const task: Task = {
-         id: this.nextId++,
-         title,
-         description,
-         status: TaskStatus.Pending,
-       };
-       this.tasks.push(task);
-       return task;
-     }
+```bash
+touch Rectangle.ts
+```
 
-     public listTasks(): Task[] {
-       return this.tasks;
-     }
+In `Rectangle.ts`, implement the `Rectangle` class:
 
-     public updateTaskStatus(id: number, status: TaskStatus): boolean {
-       const task = this.tasks.find((t) => t.id === id);
-       if (task) {
-         task.status = status;
-         return true;
-       }
-       return false;
-     }
-   }
-   ```
+```typescript
+// src/Rectangle.ts
+import { IShape } from './IShape';
+import { ShapeType } from './ShapeType';
 
-   **Explanation:**
+export class Rectangle implements IShape {
+  type: string = ShapeType.Rectangle;
+  constructor(public width: number, public height: number) {}
 
-   - **Private properties:**
-     - `tasks`: An array to store our tasks.
-     - `nextId`: A number to keep track of the next task ID.
-   - **Methods:**
-     - `addTask`: Adds a new task to the list.
-     - `listTasks`: Returns all tasks.
-     - `updateTaskStatus`: Updates the status of a task.
+  getArea(): number {
+    return this.width * this.height;
+  }
+
+  getPerimeter(): number {
+    return 2 * (this.width + this.height);
+  }
+}
+```
 
 ---
 
-### **Step 5: Add Basic Operations**
+## **Step 4: Utilize Generics and Union Types**
 
-Let's create an entry point to interact with our `ToDoList`.
+### **4.1 Create a Generic Function**
 
-1. **Create a new file `index.ts` in the `src` folder:**
+In a new file `ShapeUtils.ts`, create a function that processes any shape:
 
-   - Create the folder:
+```bash
+touch ShapeUtils.ts
+```
 
-     ```bash
-     mkdir src
-     ```
+```typescript
+// src/ShapeUtils.ts
+import { IShape } from './IShape';
 
-   - Create the file:
+export function displayShapeInfo<T extends IShape>(shape: T): void {
+  console.log(`Shape Type: ${shape.type}`);
+  console.log(`Area: ${shape.getArea().toFixed(2)}`);
+  console.log(`Perimeter: ${shape.getPerimeter().toFixed(2)}`);
+}
+```
 
-     ```bash
-     touch src/index.ts
-     ```
+---
 
-2. **Implement basic operations:**
+## **Step 5: Write the Main Program**
 
-   ```typescript
-   // src/index.ts
+### **5.1 Create the Entry Point**
 
-   import { ToDoList } from '../classes/ToDoList';
-   import { TaskStatus } from '../models/TaskStatus';
+Create `index.ts` in the `src` directory:
 
-   const myToDoList = new ToDoList();
+```bash
+touch index.ts
+```
 
-// Function to simulate async operation
-const delay = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
+In `index.ts`, put everything together:
 
-(async () => {
-  console.log('Adding tasks...\n');
-  myToDoList.addTask('Learn TypeScript', 'Cover basic to advanced topics.');
-  myToDoList.addTask('Build a project', 'Implement a TypeScript project.');
+```typescript
+// src/index.ts
+import { Circle } from './Circle';
+import { Rectangle } from './Rectangle';
+import { displayShapeInfo } from './ShapeUtils';
 
-  await delay(1000); // Simulate async delay
+const circle = new Circle(5);
+const rectangle = new Rectangle(4, 6);
 
-  console.log('Current Tasks:\n');
-  myToDoList.listTasks().forEach((task) => {
-    console.log(
-      `ID: ${task.id}, Title: ${task.title}, Status: ${task.status}`
-    );
+displayShapeInfo(circle);
+console.log('-------------------');
+displayShapeInfo(rectangle);
+```
+
+---
+
+## **Step 6: Compile and Run the Program**
+
+### **6.1 Compile TypeScript to JavaScript**
+
+Compile the TypeScript files:
+
+```bash
+npx tsc
+```
+
+This will generate JavaScript files in the `dist` directory (default).
+
+### **6.2 Run the Program**
+
+Run the compiled JavaScript using Node.js:
+
+```bash
+node dist/index.js
+```
+
+### **Expected Output**
+
+```plaintext
+Shape Type: CIRCLE
+Area: 78.54
+Perimeter: 31.42
+-------------------
+Shape Type: RECTANGLE
+Area: 24.00
+Perimeter: 20.00
+```
+
+---
+
+## **Step 7: Explore Advanced TypeScript Features**
+
+### **7.1 Type Guards**
+
+Let's add a function that uses a type guard to check the shape type.
+
+In `ShapeUtils.ts`, add:
+
+```typescript
+// src/ShapeUtils.ts
+import { Circle } from './Circle';
+import { Rectangle } from './Rectangle';
+
+function isCircle(shape: IShape): shape is Circle {
+  return shape.type === 'CIRCLE';
+}
+
+export function displayDetailedInfo(shape: IShape): void {
+  displayShapeInfo(shape);
+
+  if (isCircle(shape)) {
+    console.log(`Radius: ${(shape as Circle).radius}`);
+  } else if (shape instanceof Rectangle) {
+    console.log(`Width: ${(shape as Rectangle).width}`);
+    console.log(`Height: ${(shape as Rectangle).height}`);
+  }
+}
+```
+
+Update `index.ts` to use `displayDetailedInfo`:
+
+```typescript
+// src/index.ts
+import { Circle } from './Circle';
+import { Rectangle } from './Rectangle';
+import { displayDetailedInfo } from './ShapeUtils';
+
+const circle = new Circle(5);
+const rectangle = new Rectangle(4, 6);
+
+displayDetailedInfo(circle);
+console.log('-------------------');
+displayDetailedInfo(rectangle);
+```
+
+Re-compile and run the program:
+
+```bash
+npx tsc
+node dist/index.js
+```
+
+### **New Output**
+
+```plaintext
+Shape Type: CIRCLE
+Area: 78.54
+Perimeter: 31.42
+Radius: 5
+-------------------
+Shape Type: RECTANGLE
+Area: 24.00
+Perimeter: 20.00
+Width: 4
+Height: 6
+```
+
+---
+
+## **Step 8: Review and Conclusion**
+
+Congratulations! You've just:
+
+- **Set up a TypeScript project** with `tsconfig.json`.
+- **Used enums** to define fixed sets of constants.
+- **Defined interfaces** to enforce contracts on classes.
+- **Implemented classes** with properties and methods.
+- **Utilized generics** to create reusable functions.
+- **Applied type guards** for type safety at runtime.
+- **Organized code using modules** and ES6 imports/exports.
+
+---
+
+## **Optional Enhancements**
+
+If you have extra time, consider exploring these features:
+
+### **8.1 Async/Await with Promises**
+
+Simulate fetching shape data asynchronously:
+
+```typescript
+// src/ShapeService.ts
+export async function fetchShapeData(): Promise<IShape[]> {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve([
+        new Circle(7),
+        new Rectangle(10, 5)
+      ]);
+    }, 1000);
   });
+}
+```
 
-  await delay(1000);
+Update `index.ts`:
 
-  console.log('\nUpdating task status...\n');
-  myToDoList.updateTaskStatus(1, TaskStatus.Completed);
+```typescript
+// src/index.ts
+import { displayDetailedInfo } from './ShapeUtils';
+import { fetchShapeData } from './ShapeService';
 
-  await delay(1000);
-
-  console.log('Updated Tasks:\n');
-  myToDoList.listTasks().forEach((task) => {
-    console.log(
-      `ID: ${task.id}, Title: ${task.title}, Status: ${task.status}`
-    );
+async function main() {
+  const shapes = await fetchShapeData();
+  shapes.forEach((shape) => {
+    displayDetailedInfo(shape);
+    console.log('-------------------');
   });
-})();
-   ```
+}
 
-   **Explanation:**
+main();
+```
 
-   - We create an instance of `ToDoList`.
-   - Add two tasks.
-   - List tasks with their statuses.
-   - Update the status of the first task to `Completed`.
-   - List tasks again to show the updated status.
-   - Used an async IIFE (Immediately Invoked Function Expression) to simulate asynchronous operations using `async/await`.
+### **8.2 Decorators**
 
----
+Add a simple class decorator to log when a class is instantiated:
 
-### **Step 6: Test the Application**
+```typescript
+// src/Decorators.ts
+export function Logger(constructor: Function) {
+  console.log(`New instance created: ${constructor.name}`);
+}
+```
 
-1. **Compile and run the application using `ts-node`:**
+Apply the decorator to the `Circle` class:
 
-   ```bash
-   npx ts-node src/index.ts
-   ```
+```typescript
+// src/Circle.ts
+import { Logger } from './Decorators';
 
-2. **Expected Output:**
-
-   ```
-   Adding tasks...
-
-   Current Tasks:
-
-   ID: 1, Title: Learn TypeScript, Status: Pending
-   ID: 2, Title: Build a project, Status: Pending
-
-   Updating task status...
-
-   Updated Tasks:
-
-   ID: 1, Title: Learn TypeScript, Status: Completed
-   ID: 2, Title: Build a project, Status: Pending
-   ```
+@Logger
+export class Circle implements IShape {
+  // ... rest of the class
+}
+```
 
 ---
 
-## **Conclusion**
+## **Wrapping Up**
 
-Congratulations! You've built a simple To-Do List application using TypeScript in just 15 minutes. We've covered:
-
-- **Type Annotations:** Specifying types for variables and function parameters.
-- **Interfaces:** Defining the shape of objects with the `Task` interface.
-- **Enums:** Using `TaskStatus` enum to represent fixed sets of constants.
-- **Classes:** Implementing the `ToDoList` class with properties and methods.
-- **Asynchronous Functions:** Using `async/await` to simulate async operations.
+TypeScript provides powerful features that help you write safer and more maintainable code. By completing this tutorial, you've touched upon many key aspects of TypeScript.
 
 ---
 
-Feel free to expand this application by adding more features, such as:
+# **Complete Code Files for Reference**
 
-- Removing tasks.
-- Persisting tasks to a file or database.
-- Adding user input from the command line.
+### **tsconfig.json**
+
+```json
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "module": "commonjs",
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "strict": true
+  }
+}
+```
+
+### **src/ShapeType.ts**
+
+```typescript
+export enum ShapeType {
+  Circle = 'CIRCLE',
+  Rectangle = 'RECTANGLE'
+}
+```
+
+### **src/IShape.ts**
+
+```typescript
+export interface IShape {
+  type: string;
+  getArea(): number;
+  getPerimeter(): number;
+}
+```
+
+### **src/Circle.ts**
+
+```typescript
+import { IShape } from './IShape';
+import { ShapeType } from './ShapeType';
+
+export class Circle implements IShape {
+  type: string = ShapeType.Circle;
+  constructor(public radius: number) {}
+
+  getArea(): number {
+    return Math.PI * this.radius ** 2;
+  }
+
+  getPerimeter(): number {
+    return 2 * Math.PI * this.radius;
+  }
+}
+```
+
+### **src/Rectangle.ts**
+
+```typescript
+import { IShape } from './IShape';
+import { ShapeType } from './ShapeType';
+
+export class Rectangle implements IShape {
+  type: string = ShapeType.Rectangle;
+  constructor(public width: number, public height: number) {}
+
+  getArea(): number {
+    return this.width * this.height;
+  }
+
+  getPerimeter(): number {
+    return 2 * (this.width + this.height);
+  }
+}
+```
+
+### **src/ShapeUtils.ts**
+
+```typescript
+import { IShape } from './IShape';
+import { Circle } from './Circle';
+import { Rectangle } from './Rectangle';
+
+export function displayShapeInfo<T extends IShape>(shape: T): void {
+  console.log(`Shape Type: ${shape.type}`);
+  console.log(`Area: ${shape.getArea().toFixed(2)}`);
+  console.log(`Perimeter: ${shape.getPerimeter().toFixed(2)}`);
+}
+
+function isCircle(shape: IShape): shape is Circle {
+  return shape.type === 'CIRCLE';
+}
+
+export function displayDetailedInfo(shape: IShape): void {
+  displayShapeInfo(shape);
+
+  if (isCircle(shape)) {
+    console.log(`Radius: ${(shape as Circle).radius}`);
+  } else if (shape instanceof Rectangle) {
+    console.log(`Width: ${(shape as Rectangle).width}`);
+    console.log(`Height: ${(shape as Rectangle).height}`);
+  }
+}
+```
+
+### **src/index.ts**
+
+```typescript
+import { displayDetailedInfo } from './ShapeUtils';
+import { Circle } from './Circle';
+import { Rectangle } from './Rectangle';
+
+const circle = new Circle(5);
+const rectangle = new Rectangle(4, 6);
+
+displayDetailedInfo(circle);
+console.log('-------------------');
+displayDetailedInfo(rectangle);
+```
+
+---
+
+**Thank you for coding along!** Feel free to experiment further and explore more TypeScript features.
