@@ -269,6 +269,6 @@ var getCircleArea = function(radius) {
 
 **Instructions:**
 
-- Write your answers in a JavaScript file or an online code editor.
+- Write your explainations in the code as a block comment `*/ <your explationations> /*.
 - Test each task to ensure your functions work as expected.
 - Provide explanations for Task 4 to demonstrate your understanding of hoisting.
