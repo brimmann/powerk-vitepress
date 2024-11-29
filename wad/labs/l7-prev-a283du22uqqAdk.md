@@ -5,7 +5,7 @@ outline: [2, 3]
 ## Procedural Task
 This task is provided with proper instruction, the task is marked correct as long as you follow the instructions. Do not copy code, instead write it so you can understand the whole concept. This is essential for your exploratory tasks, quizzes, assignments and exams.
 
-### 1. Hoisting
+### Hoisting
 #### **Example with `var`:**
 
 ```javascript
