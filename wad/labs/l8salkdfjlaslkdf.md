@@ -1,3 +1,7 @@
+---
+outline: [2, 3]
+---
+
 ## Overview
 
 In this lab, you will:
