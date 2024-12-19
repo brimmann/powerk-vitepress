@@ -1,3 +1,7 @@
+---
+outline: [2, 3]
+---
+
 
 ## Task 1: Simple Functions 
 
