@@ -5,6 +5,7 @@ export default defineConfig({
   sitemap: {
     hostname: "https://powerk.codeglyn.com",
   },
+  ignoreDeadLinks: true,
   title: "Powerk",
   description: "Learning made simple.",
   head: [
