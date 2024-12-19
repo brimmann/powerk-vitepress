@@ -1,3 +1,7 @@
+---
+outline: [2, 3]
+---
+
 # Building a Basic REST API In Node and Integrating it with React Application Part 1
 
 In this tutorial, we will first discuss the concepts of Server and Client. Next, we will build a simple client webpage using pure HTML and CSS to display a list of students. After that, we will create a React application for the same webpage. We will then develop a simple server using Node.js and Express. Finally, we will connect the server to our client application to make the webpage more dynamic and interactive.
