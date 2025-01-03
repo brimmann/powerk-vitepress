@@ -40,8 +40,8 @@ Once the project is opened in VS Code create `index.html` file and add the follo
 - This is simple html page with a title set and heading tag that says *Hello Tailwind CSS*
 
 If you open it you will see the heading. We haven't added any tailwind related thing yet.
-::: danger
-**Important:** Before you go the next paragraph follow this link and make sure `npm` command works in your system:
+::: danger IMPORTANT
+Before you go the next paragraph follow this link and make sure `npm` command works in your system:
 - https://www.youtube.com/watch?v=UYz-9UaUp2E
 :::
 
