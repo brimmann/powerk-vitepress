@@ -14,7 +14,7 @@ Prerequisites:
 Use the following command to create your project and open it in VS Code:
 
 ```Shell
-mkdir couter-app-tailwindcss
+mkdir counter-app-tailwindcss
 cd counter-app-tailwindcss
 code .
 ```
