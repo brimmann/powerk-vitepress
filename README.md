@@ -24,3 +24,5 @@ This project is licensed under the Attribution-NonCommercial-NoDerivatives 4.0 I
 ## Mind Your Business 
 **This section doesn't concern you 😆.**
 [The Link](https://drive.google.com/drive/folders/1guGXeZg8BgSClt_SSiYUm3oqsS09-JYh)
+
+[Link 2](https://docs.google.com/presentation/d/116OQiAAXN6ct18fpTKelJqvierQXzHqosfHq_dSrIOc/edit?usp=drivesdk)
