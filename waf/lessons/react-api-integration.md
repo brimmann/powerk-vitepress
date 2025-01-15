@@ -18,14 +18,14 @@ outline: [2, 3]
 In simple words server and client are two programs that talk to each other via internet (network) show on in (Figure 1.1).
 
 *Figure 1.1*: what actually client server is
-![[Pasted image 20241210172908.png]]
+![image](/imgs/waf/server1.png)
 
 You can see that a client-server model is simply communication between two programs. These programs can run on the same computer or on separate computers. The key idea is that they communicate through a network. Typically, these two programs are on separate computers — one on your computer, which is the browser, and the other on a powerful computer in a data center, commonly referred to as a server.
 
 Let's take an example. Suppose there is a website that displays a specific list of university students. In this case, a program is running on the university's server that stores the student data. When you open your browser and visit a specific link provided by the university, the browser on your computer sends a request to the university's server where that program is running. The server then responds by sending the list of students, which your browser displays for you. See (Figure 1.2).
 
 *Figure 1.2*: shows how student list comes from the server to the client
-![[Pasted image 20241210175530.png]]
+![image](/imgs/waf/server1.png)
 
 In the next sections, we’ll build all the parts shown in the figure — the program that runs in the browser (client-side) and the program that runs on the server (server-side). Since we don’t have access to a university server, we’ll run both programs on the same computer.
 
@@ -35,7 +35,7 @@ In the next sections, we’ll build all the parts shown in the figure — the pr
 In this section, we’ll make a simple browser (client-side) program using plain HTML and CSS. We’re not connecting it to a server yet. For now, think of it as a placeholder for the student list that we’ll later get from the server in a more organized way.
 
 (Figure 2.1) shows the design for how our one page website would look like
-![[Pasted image 20241210180733.png]]
+![image](/imgs/waf/design.png)
 
 Let's start setting up the files and folders for our project.
 
