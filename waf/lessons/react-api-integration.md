@@ -11,7 +11,7 @@ outline: [2, 3]
 4. Building the REST API in Node/Express
 5. Integrating the API with React Client
 6. Serving Data from Database Instead of File
-7. Adding New Records and Updating Existing Records
+7. Adding New Records
 
 ## Section 1: How Server and Client Work Together
 
@@ -1531,7 +1531,7 @@ connectToDatabase().then(() => {
 Now if you go to your front end refresh you will see the same data in the table but this time it coming from a database not a file.
 
 
-## Section 7: Adding New Records and Updating Existing Records
+## Section 7: Adding New Records
 
 First let's create a new endpoint in our server to add new records to our database. So update your back-end server's `app.js` file too look something like this.
 
