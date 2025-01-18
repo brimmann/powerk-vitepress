@@ -39,7 +39,7 @@ export default defineConfig({
     footer: {
       message:
         "Released under the Attribution-NonCommercial-NoDerivatives 4.0 International License.",
-      copyright: "Copyright © 2024 Mohammad Rashid Stanikzai",
+      copyright: "Copyright © 2025 Mohammad Rashid Stanikzai",
     },
     sidebar: {
       // "/explore/": [
