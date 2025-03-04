@@ -14,7 +14,7 @@ Read the description carefully.
 - **Make the Website Live:**
     - Host your website using **GitHub Pages**.
 - **Important Points to Consider**
-    - Write everythign in your own words.
+    - Write everything in your own words.
     - Do **not** generate AI-generated code.
     - Ensure you **do not copy** each other's coding style or text.
     - Strictly follow folders and files naming guideline.
@@ -23,19 +23,20 @@ Read the description carefully.
 
 ## Exercise
 
-- **Create a Web Page**
-- **Include the Following Sections:**
+- **Create a web page**
+- **Include the following sections:**
     - **About Myself**
         - Provide brief information about yourself.
         - Include a picture of yourself in this section.
     - **Things I Like About Web Development**
         - Write in your own words what do you like about Web Development.
-        - Create a list of websites with their links that you like and want create something like that.
+        - Create a list of websites with their links that you like and want to create something like that.
     - **Things I Don't Like About Web Development**
         - Write what you don't like about web development.
     - **Navigation Bar**
         - Allow users to navigate between sections by clicking section names.
-- **Restrictions Before Styling:**
+- **Use approperiate structure and semementic elemetns wherever possible**
+- **Restrictions before styling:**
     - Do not use any CSS up to this point.
 - **Enhance with CSS:**
     - Once the basic structure is complete, apply CSS to improve the design.
