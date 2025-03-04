@@ -3,7 +3,7 @@ outline: [2, 3]
 footer: false
 ---
 
-## WAD, Spring 2025 - Lab 1
+# WAD, Spring 2025 - Lab 1
 
 Read the description carefully.
 
