@@ -43,6 +43,6 @@ footer: false
 - **Final Section - Report:**
     - Add a section titled **"Report"** before the footer.
     - Write in your own words:
-        - What you did.
-        - Why you did it.
-        - What you learned.
+        - What you did?
+        - Why you did it?
+        - What you learned?
