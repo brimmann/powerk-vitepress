@@ -3,37 +3,37 @@ outline: [2, 3]
 footer: false
 ---
 
-# WAD, Spring 2025 - Lab 2
+## WAD, Spring 2025 - Lab 1
 
-- **Read the description carefully.**
+Read the description carefully.
+
 - **Complete the exercise.**
 - **Folder Naming:**
     - Name the folder **`lab2`**.
     - Include it in the repository **`wad-labs`** (created in the previous lab).
 - **Make the Website Live:**
     - Host your website using **GitHub Pages**.
-- **Write Everything in Your Own Words:**
+- **Important Points to Consider**
+    - Write everythign in your own words.
     - Do **not** generate AI-generated code.
     - Ensure you **do not copy** each other's coding style or text.
+    - Strictly follow folders and files naming guideline.
+- **Refer to the following website for authentic documentation on HTML/CSS**
+	- https://developer.mozilla.org/en-US/docs/Learn_web_development
 
 ## Exercise
 
 - **Create a Web Page**
 - **Include the Following Sections:**
-    - **Introduction to HTML**
-        - Provide a brief history of HTML.
-    - **Ten Most Used HTML Elements**
-        - List and explain ten commonly used HTML elements.
-        - Provide their syntax.
-        - Link to W3Schools for an in-depth description of each element.
-    - **Importance of Semantic Structure**
-        - Explain why using semantic HTML elements is crucial.
-        - Include the following visual figure to represent the idea.
-        - ![image](/imgs/wad2/l2.png)
-    - **Footer Section**
+    - **About Myself**
         - Provide brief information about yourself.
         - Include a picture of yourself in this section.
-    - **Navigation Bar (Navbar)**
+    - **Things I Like About Web Development**
+        - Write in your own words what do you like about Web Development.
+        - Create a list of websites with their links that you like and want create something like that.
+    - **Things I Don't Like About Web Development**
+        - Write what you don't like about web development.
+    - **Navigation Bar**
         - Allow users to navigate between sections by clicking section names.
 - **Restrictions Before Styling:**
     - Do not use any CSS up to this point.
