@@ -29,7 +29,7 @@ footer: false
     - **Importance of Semantic Structure**
         - Explain why using semantic HTML elements is crucial.
         - Include the following visual figure to represent the idea.
-        - ![image](/imgs/wad/l11.png)
+        - ![image](/imgs/wad2/l2.png)
     - **Footer Section**
         - Provide brief information about yourself.
         - Include a picture of yourself in this section.
