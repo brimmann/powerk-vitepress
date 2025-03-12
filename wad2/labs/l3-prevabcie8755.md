@@ -5,7 +5,36 @@ footer: false
 
 # WAD, Spring 2025 - Lab 3 (March 13, 2025)
 
-Refer to following design and make web page like it. Use your own text and picture from the internet. For the profile card add your own picture and description.Read the description carefully.
+Read the following description carefully.
+
+### Web-page Structure
+
+#### **1. General Layout:**
+
+Create a web-page with the following sections:
+
+- **Header** → Contains a **logo** and the **website name**.
+- **Main Section** → Includes:
+  - An **article** with multiple paragraphs.
+  - Different types of text formatting.
+  - Bullet point lists.
+  - Headings to structure the content.
+  - An **image** related to the article.
+  - The **date of posting** displayed.
+- **Profile Card** → Displays:
+  - Your **profile picture** (in a circular frame).
+  - Your **name**.
+  - A **brief bio** about yourself.
+  - The **number of followers** you have.
+  - Styled to look like a **card**.
+- **Footer** → Includes a **copyright message**.
+
+#### **2. Styling & Design:**
+
+- Use **CSS** to enhance the website’s appearance.
+- A **more visually appealing design** will earn higher marks.
+- **Explore Figma Community** for design inspiration:  
+   [Figma Community Website Templates](https://www.figma.com/community/website-templates).
 
 ### CSS Rules to Follow
 
@@ -16,7 +45,10 @@ Implement the following CSS rules:
 - **Element Selectors** → Style all headings and paragraphs.
 - **Class Selectors** → Use for **navigation** and **buttons**.
 - **ID Selectors** → Apply to **uniquely style the main section**.
-- **Attribute Selectors** → Modify **input fields** (`input[type="text"]`).
+- **Attribute Selectors** → Use them to style links differently based on their type, such as:
+  - **External links** (`a[href^="http"]`) → Links that go to other websites.
+  - **Internal links** (`a[href^="/"]`) → Links that navigate within your website.
+  - **Document links** (`a[href$=".pdf"]`) → Links that open PDF or other document files.
 - **Pseudo-Classes** → Add hover effects (`:hover`) on links and buttons.
 - **Pseudo-Elements** → Use (`::before`, `::after`) for decorative content.
 - **Contextual Selectors** → Example: `nav a {}` for styling links inside the navbar.
@@ -39,4 +71,4 @@ Implement the following CSS rules:
 - Use **letter-spacing** and **word-spacing** for aesthetics.
 - Apply `text-transform` to **capitalize headings** or highlight sections.
 
-![image](/wad2-l3.png)
+#### Use CSS variables to define repeating colors and values
