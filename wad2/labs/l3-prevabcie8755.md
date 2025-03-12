@@ -40,18 +40,18 @@ Create a web-page with the following sections:
 
 Implement the following CSS rules:
 
+#### **CSS Variables:**
+- Use CSS variables to define repeating values (e.g., colors, sizes, etc.) 
+
 #### **Selectors Usage:**
 
-- **Element Selectors** → Style all headings and paragraphs.
-- **Class Selectors** → Use for **navigation** and **buttons**.
-- **ID Selectors** → Apply to **uniquely style the main section**.
-- **Attribute Selectors** → Use them to style links differently based on their type, such as:
-  - **External links** (`a[href^="http"]`) → Links that go to other websites.
-  - **Internal links** (`a[href^="/"]`) → Links that navigate within your website.
-  - **Document links** (`a[href$=".pdf"]`) → Links that open PDF or other document files.
-- **Pseudo-Classes** → Add hover effects (`:hover`) on links and buttons.
-- **Pseudo-Elements** → Use (`::before`, `::after`) for decorative content.
-- **Contextual Selectors** → Example: `nav a {}` for styling links inside the navbar.
+- **Element Selectors** 
+- **Class Selectors** 
+- **ID Selectors** 
+- **Attribute Selectors** → For example, for assigning different colors to fragments/internal/external links or links to documents
+- **Pseudo-Classes** 
+- **Pseudo-Elements** 
+- **Contextual Selectors**
 
 #### **Box Model & Layout Styling:**
 
@@ -65,10 +65,9 @@ Implement the following CSS rules:
 #### **Typography & Readability:**
 
 - Choose a **readable font-family**.
-- Set different **font sizes** for headings and body text.
+- Set different **font sizes** for headings and body text. Preferable using relative units.
 - Adjust **font-weight** for emphasis.
 - Define **line-height** and **text-align** for better readability.
 - Use **letter-spacing** and **word-spacing** for aesthetics.
 - Apply `text-transform` to **capitalize headings** or highlight sections.
 
-#### Use CSS variables to define repeating colors and values
