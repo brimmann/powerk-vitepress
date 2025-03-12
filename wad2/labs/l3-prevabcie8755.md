@@ -1,4 +1,11 @@
-Refer to following design and make web page like it. Use your own text and picture from the internet. For the profile card add your own picture and description.
+---
+outline: [2, 3]
+footer: false
+---
+
+# WAD, Spring 2025 - Lab 3 (March 13, 2025)
+
+Refer to following design and make web page like it. Use your own text and picture from the internet. For the profile card add your own picture and description.Read the description carefully.
 
 ### CSS Rules to Follow
 
