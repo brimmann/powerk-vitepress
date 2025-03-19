@@ -11,29 +11,18 @@ Read the description carefully.
 
 This task consists of three main parts:
 
-1. **Conference Attendees Table**
+1. **Detailed Gradesheet**
 
-   - Create a table listing people attending a conference.
-   - The table should include the following columns:
-     - First Name
-     - Last Name
-     - Occupation ("Student", "Academic", "Professional")
-     - City Name
-   - Include at least 10 rows of sample data.
+   - Create a table for displaying information about students, try to display diverse information with multiple data types.
+   - Include at least 5 columns and 10 rows of sample data.
+   - Use semantic elements of tables wherever possible.
 
 2. **Conference Registration Form**
 
-   - Create a form on the same page for users to input details of a single attendee.
-   - The form should collect the following information:
-     - First Name (Text input)
-     - Last Name (Text input)
-     - Email (Email input)
-     - Occupation (Dropdown with options: "Student", "Academic", "Professional")
-     - Attendance History (Radio buttons: "Attended before" or "First time")
-     - Interest in Future Sessions (Dropdown with options: "Yes" or "No")
-     - Preferred Time (Time input)
+   - Create a form on the same page for adding a record of a student.
+   - Use at least 5 different types of for elements.
+   - Use semantic elements of forms wherever possible.
    - Add a **submit button**.
-   - Implement **form validation**.
 
 3. **Styling with CSS**
 
