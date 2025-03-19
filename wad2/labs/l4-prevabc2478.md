@@ -20,9 +20,6 @@ This task consists of three main parts:
      - Occupation ("Student", "Academic", "Professional")
      - City Name
    - Include at least 10 rows of sample data.
-   - Make the table accessible:
-     - Add a `<caption>` element.
-     - Use the `scope` attribute for header cells to properly associate them with their respective columns.
 
 2. **Conference Registration Form**
 
@@ -35,9 +32,6 @@ This task consists of three main parts:
      - Attendance History (Radio buttons: "Attended before" or "First time")
      - Interest in Future Sessions (Dropdown with options: "Yes" or "No")
      - Preferred Time (Time input)
-   - Ensure accessibility:
-     - Each field must have a corresponding `<label>` element.
-     - Text and email inputs should have **placeholders** (e.g., "Enter your full name", "your.email@example.com").
    - Add a **submit button**.
    - Implement **form validation**.
 
