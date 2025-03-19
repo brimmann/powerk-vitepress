@@ -17,7 +17,7 @@ This task consists of three main parts:
    - Include at least 5 columns and 10 rows of sample data.
    - Use semantic elements of tables wherever possible.
 
-2. **Conference Registration Form**
+2. **Student Data Form**
 
    - Create a form on the same page for adding a record of a student.
    - Use at least 5 different types of for elements.
