@@ -3,7 +3,7 @@ outline: [2, 3]
 footer: false
 ---
 
-# WAD, Spring 2025 - Lab 3 (March 13, 2025)
+# WAD, Spring 2025 - Lab 3 (March 20, 2025)
 
 Read the description carefully.
 
