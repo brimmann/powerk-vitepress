@@ -6,6 +6,22 @@ outline: [1, 3]
 
 In this tutorial, we’re gonna go over the basics of TailwindCSS. It’s a CSS framework that makes it way easier to build clean, good-looking designs—fast. You just use utility classes, no need to write your own CSS. Everyone’s using it these days, so it’s a good skill to have. It doesn’t take long to pick up. Just learn the basics and you’re set. After a bit, you’ll start thinking in utility classes instead of regular CSS.
 
+We will cover the following things:
+
+- Project Setup
+- Styling with utility classes
+- VS code setup to write utility classes faster
+- Flexbox and Grid
+- Basic styling
+- Tables
+- Advanced Styling (Bonus Lesson)
+- Responsive Design
+- Hover and focus
+- Dark mode
+- Arbitrary values
+- Development environment using Node.js (Bonus Lesson)
+- Configuration (Bonus Tip)
+
 ## Project Setup
 
 To start working on our project, we do the followings:
