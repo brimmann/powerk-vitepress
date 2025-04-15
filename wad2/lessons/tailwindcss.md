@@ -8,8 +8,8 @@ In this tutorial, we’re gonna go over the basics of TailwindCSS. It’s a CSS 
 
 We will cover the following things:
 
-- Styling with utility classes
 - Project Setup
+- Styling with utility classes
 - VS code setup to write utility classes faster
 - Flexbox and Grid
 - Basic styling
@@ -21,19 +21,6 @@ We will cover the following things:
 - Arbitrary values
 - Development environment using Node.js (Bonus Lesson)
 - Configuration (Bonus Tip)
-
-## Styling with utility classes
-
-TailwindCSS allow us to craft powerful user interface without writing any CSS. And this is made possible by TailwindCSS **utility classes**. You can see these classes we added to our elements in the previous example. Unlike other CSS frameworks like Bootstrap TailwindCSS utility classes target only one specific CSS rule. As you start working with these classes you will get used to it and you will be able to recall the names of these classes and you will know where to use which class.
-
-You might ask why don't we just use inline style that is also something like this. But TailwindCSS is more than that:
-
-- **Designing with constraints** — using inline styles, every value is a random. With utilities, you’re choosing styles from a predefined design system, which makes it much easier to build visually consistent UIs.
-- **Hover, focus, and other states** — inline styles can’t target states like hover or focus, but Tailwind’s can right in the HTML.
-- **Media queries** — you can’t use media queries in inline styles, but in TailwindCSS you can.
-- **No browser conflicts** — Any page using TailwindCSS will look the same accros all browsers and environments.
-
-**Note: You don't have to memorize these classes, you will naturally get used to them as you keep working with TailwindCSS.**
 
 ## Project Setup
 
@@ -71,6 +58,19 @@ So let's setup our project using CDN version of TailwindCSS. Create folder and i
 - We used TailwindCSS to style the page. Notice that there is a heading right in the center of the page and we haven't written any CSS.
 
 The example above demonstrate how we can use TailwindCSS to style our web pages.
+
+## Styling with utility classes
+
+TailwindCSS allow us to craft powerful user interface without writing any CSS. And this is made possible by TailwindCSS **utility classes**. You can see these classes we added to our elements in the previous example. Unlike other CSS frameworks like Bootstrap TailwindCSS utility classes target only one specific CSS rule. As you start working with these classes you will get used to it and you will be able to recall the names of these classes and you will know where to use which class.
+
+You might ask why don't we just use inline style that is also something like this. But TailwindCSS is more than that:
+
+- **Designing with constraints** — using inline styles, every value is a random. With utilities, you’re choosing styles from a predefined design system, which makes it much easier to build visually consistent UIs.
+- **Hover, focus, and other states** — inline styles can’t target states like hover or focus, but Tailwind’s can right in the HTML.
+- **Media queries** — you can’t use media queries in inline styles, but in TailwindCSS you can.
+- **No browser conflicts** — Any page using TailwindCSS will look the same accros all browsers and environments.
+
+**Note: You don't have to memorize these classes, you will naturally get used to them as you keep working with TailwindCSS.**
 
 ## VS code setup to write utility classes faster
 
