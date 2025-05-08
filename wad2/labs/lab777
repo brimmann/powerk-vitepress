@@ -1,0 +1,22 @@
+---
+outline: [2, 3]
+footer: false
+---
+
+# WAD, Spring 2025 - Lab 7 (May 8, 2025)
+
+Read the description carefully.
+
+### **Task Overview**
+
+1. **Table Creation using JavaScript**
+
+   - Recreate the table you have developed in Lab 4 using JavaScript.
+
+2. **Data Aggregation**
+
+   - Add an additional row in the table to display the average of the numeric column(s)
+   - Create a button "Find Average", when it is clicked, the average of the values of the numeric column(s) show be displayed in the additional row
+
+
+---
