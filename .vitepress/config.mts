@@ -39,7 +39,8 @@ export default defineConfig({
     footer: {
       message:
         "Released under the Attribution-NonCommercial-NoDerivatives 4.0 International License.",
-      copyright: "Copyright © 2025 Mohammad Rashid Stanikzai",
+      copyright:
+        'Copyright © 2025 Mohammad Rashid Stanikzai (<a href="me.codeglyn.com">me.codeglyn.com</a>)',
     },
     sidebar: {
       // "/explore/": [
